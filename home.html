@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keyword" content="Blockchain explorer">
+	<meta name="description" content="A simple blockchain explorer">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Blockchain explorer</title>
+	
+</head>
+<body onload="readfile()">
+	
+	<div id="header">
+		<h2 id="name">Blockchain explorer</h2>
+	</div>
+	<div id="search">
+		<form id="myForm">
+			<input type="text" name="keyword" id="input_search" placeholder="Enter height, hash, timestamp ..." >
+			<input type="button" value="Search" id="search_button" onclick="initiateSearch()">
+		</form>
+	</div>
+	<div id="table_div">
+		<table id="table">
+			<thead>
+				<tr>
+					<th>Height</th>
+					<th>Hash</th>
+					
+					<th>Size</th>
+				</tr>
+			</thead>
+
+			<tbody id="tbody" >
+				<tr onclick="alert()">
+					
+				</tr>
+			</tbody>
+			
+		</table>
+		<p id="textSection"></p>
+	</div>
+
+
+
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="data.json"></script>
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>-->
+
+	
+	
+</body>
